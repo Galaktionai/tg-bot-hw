@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальная рулетка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hystmodal.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="ruletka-section">
+        <div class="ruletka">
+            <h1>
+                Harlem World
+            </h1>
+            <div class="ruletka__wraper">
+                <div class="wraper">
+                    <div class="wraper__arrow">
+                        <div class="arrowup"></div>
+                        <div class="arrowdown"></div>
+                    </div>
+                    <div class="window">
+                    <ul class="list">
+                    </ul>
+                        <ul class="list">
+                            <li data-text="1 prise">
+                                <img src="https://cdn.iconfinder.com/data/icons/fruits/128/Strawberry.png" alt="">
+                            </li>
+                            <li data-text="2 prise">
+                                <img src="https://cdn.iconfinder.com/data/icons/fruits/128/Cherry.png" alt="">
+                            </li>
+                            <li data-text="3 prise">
+                                <img src="https://cdn.iconfinder.com/data/icons/fruits/128/Apple.png" alt="">
+                            </li>
+                            <li data-text="4 prise">
+                                <img src="https://cdn.iconfinder.com/data/icons/fruits/128/Lemon.png" alt="">
+                            </li>
+                            <li data-text="5 prise">
+                                <img src="https://cdn.iconfinder.com/data/icons/fruits/128/Kiwi.png" alt="">
+                            </li>
+                            <li data-text="6 prise">
+                                <img src="https://cdn.iconfinder.com/data/icons/fruits/128/Pear.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="button" data-hystmodal="#myModal">LETS ROLL</button>
+
+            <div class="hystmodal" id="myModal" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                    <div class="hystmodal__window" role="dialog" aria-modal="true">
+                        <button data-hystclose class="hystmodal__close">Закрыть</button>
+                        <div class="win__modal">
+                            <h6>
+                                Поздравляем!
+                            </h6>
+                            <span>Вы выиграли <span class="win"></span></span>
+                            <span>Следующий раз вы можете покрутить через 24 часа</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="win"></span>
+        </section>
+    
+        </div>
+        
+    
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="js/hystmodal.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
